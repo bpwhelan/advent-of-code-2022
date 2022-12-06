@@ -11,7 +11,7 @@ const ALPHABET: &str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 fn main() {
     let mut sacks: Vec<RuckSack> = Vec::new();
 
-    for line in file_utils::read_file() {
+    for line in file_utils::read_file_by_line() {
         sacks.push(build_sack(line.unwrap()));
     }
 

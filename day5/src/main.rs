@@ -10,7 +10,7 @@ fn main() {
     for j in 0..9 {
         all_cargo.push(LinkedList::new());
     }
-    for line in util::file_utils::read_file() {
+    for line in util::file_utils::read_file_by_line() {
         let line_string = line.unwrap();
         if line_string.starts_with("[") {
             for (i, c) in line_string.chars().enumerate() {

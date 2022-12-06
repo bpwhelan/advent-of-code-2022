@@ -3,7 +3,7 @@ use std::ops::Range;
 fn main() {
     let mut number_of_contained = 0;
     let mut number_of_overlapped = 0;
-    for line in util::file_utils::read_file() {
+    for line in util::file_utils::read_file_by_line() {
         let mut range1: Vec<i32> = Vec::new();
         for elf in line.unwrap().as_str().split(",") {
             if !range1.is_empty() {
