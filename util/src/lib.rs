@@ -2,7 +2,7 @@ pub mod file_utils {
     use std::fs::File;
     use std::io::{BufRead, BufReader, Lines};
 
-    static FILE_PATH: &str = "input.txt";
+    static FILE_PATH: &str = "input";
     pub fn read_file() -> Lines<BufReader<File>> {
         println!("In file {}", FILE_PATH);
 
