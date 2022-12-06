@@ -60,7 +60,7 @@ fn get_common_char(sack_group: &[RuckSack]) -> char {
     }
 
     for entry in map {
-        if entry.1 == 3 {
+        if entry.1 == sack_group.len() as i32 {
             return entry.0;
         }
     }
