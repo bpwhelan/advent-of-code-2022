@@ -3,8 +3,13 @@ use std::time::Instant;
 fn main() {
     let input = util::file_utils::read_file_to_string();
 
+    let time = Instant::now();
     find_start(input.clone(), 4);
+    println!("Elapsed : {:.2?}", time.elapsed());
+
+    let time = Instant::now();
     find_start(input.clone(), 14);
+    println!("Elapsed : {:.2?}", time.elapsed());
 }
 
 fn find_start(input: String, marker_length: i32) {
@@ -17,7 +22,7 @@ fn find_start(input: String, marker_length: i32) {
 
         for (i, char) in buffer.chars().enumerate() {
             for j in i + 1..buffer.len() {
-                if char == buffer.chars().nth(j).unwrap() {
+                if char == buffer.as_bytes()[j] as char {
                     found = true;
                 }
             }
