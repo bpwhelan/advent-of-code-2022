@@ -13,16 +13,16 @@ fn main() {
 }
 
 fn find_start(input: String, marker_length: i32) {
-    let mut buffer: String = String::new();
+    let mut buffer: Vec<char> = Vec::new();
 
     for (index, c) in input.chars().enumerate() {
 
         let mut found = false;
         buffer.push(c);
 
-        for (i, char) in buffer.chars().enumerate() {
+        for (i, char) in buffer.iter().enumerate() {
             for j in i + 1..buffer.len() {
-                if char == buffer.as_bytes()[j] as char {
+                if char == &buffer[j] {
                     found = true;
                 }
             }
