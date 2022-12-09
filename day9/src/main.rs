@@ -11,13 +11,11 @@ fn main() {
 
 fn move_rope_through_input(knots: usize) -> Vec<Position> {
     let steps: Vec<Motion> = util::file_utils::read_file_by_line().map(|f| parse_output(f.unwrap())).collect();
-    // let mut head = Position { x: 0, y: 0 };
 
     let mut knots: Vec<Position> = vec![Position { x: 0, y: 0}; knots];
     let mut visited: Vec<Position> = Vec::new();
 
     visited.push(knots[0].clone());
-
 
     for step in &steps {
         for _i in 0..step.steps {
