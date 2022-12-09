@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/day1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day4/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day5/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day6/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day7/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day8-test/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day8/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/day1/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day2/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day3/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day7/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day6/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day5/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day4/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day8/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day8-test/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
