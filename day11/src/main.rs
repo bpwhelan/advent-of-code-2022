@@ -1,5 +1,4 @@
 use std::collections::HashMap;
-use std::hash::Hash;
 use std::ops::{Add, Div, Mul};
 use std::str::FromStr;
 
@@ -15,10 +14,8 @@ fn pass_between_monkeys(rounds: usize, manual_relief: usize) {
 
     let mut inspection_level: HashMap<usize, usize> = HashMap::new();
 
-    let mut lcm= monkeys[0].test.divisible_by;
-    for i in 1..monkeys.len() {
-        lcm = find_lcm(lcm,monkeys[i].test.divisible_by)
-    }
+    let mut modulator = 1;
+    monkeys.iter().for_each(|f| modulator *= f.test.divisible_by);
 
     for _round in 0..rounds {
         for monkey_index in 0..monkeys.len() {
@@ -31,7 +28,6 @@ fn pass_between_monkeys(rounds: usize, manual_relief: usize) {
                 if monkeys[monkey_index].operation.use_old_as_value {
                     value = monkeys[monkey_index].items[0];
                 }
-                let divide_by = (&monkeys[monkey_index]).test.divisible_by;
                 let mut worry_level = match monkeys[monkey_index].operation.operator {
                     Operator::Mult => { monkeys[monkey_index].items[0].mul(value)}
                     Operator::Add => { monkeys[monkey_index].items[0].add(value)}
@@ -40,7 +36,7 @@ fn pass_between_monkeys(rounds: usize, manual_relief: usize) {
                 if manual_relief != 0 {
                     worry_level = worry_level.div(manual_relief);
                 } else {
-                    worry_level = worry_level % lcm;
+                    worry_level = worry_level % modulator;
                 }
 
                 if worry_level.divisible_by(monkeys[monkey_index].test.divisible_by) {
@@ -62,18 +58,6 @@ fn pass_between_monkeys(rounds: usize, manual_relief: usize) {
 
     println!("{:?}", inspection_counts[0] * inspection_counts[1]);
 }
-
-fn find_lcm(a: usize, b: usize) -> usize {
-    a * b / gcd_euclid(a, b)
-}
-
-fn gcd_euclid(a: usize, b: usize) -> usize {
-    if b == 0 {
-        return a;
-    }
-    return gcd_euclid(b, a % b)
-}
-
 
 fn parse_output() -> Vec<MonkeyHas> {
     let mut monkeys: Vec<MonkeyHas> = Vec::new();
