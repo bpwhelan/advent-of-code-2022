@@ -3,26 +3,26 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/day1/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/day2/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/day3/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/day4/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/day5/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/day6/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/day7/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/day8/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/day10/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/day9/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/test_main/src" isTestSource="false" />
-      <excludeFolder url="file://$MODULE_DIR$/day1/target" />
-      <excludeFolder url="file://$MODULE_DIR$/day2/target" />
-      <excludeFolder url="file://$MODULE_DIR$/day3/target" />
-      <excludeFolder url="file://$MODULE_DIR$/day7/target" />
-      <excludeFolder url="file://$MODULE_DIR$/day6/target" />
-      <excludeFolder url="file://$MODULE_DIR$/day5/target" />
-      <excludeFolder url="file://$MODULE_DIR$/day4/target" />
-      <excludeFolder url="file://$MODULE_DIR$/day8/target" />
-      <excludeFolder url="file://$MODULE_DIR$/day9/target" />
+      <sourceFolder url="file://$MODULE_DIR$/day01/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day02/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day03/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day04/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day05/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day06/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day07/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day08/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day09/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/day01/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day02/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day03/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day07/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day06/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day05/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day04/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day08/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day09/target" />
       <excludeFolder url="file://$MODULE_DIR$/day10/target" />
       <excludeFolder url="file://$MODULE_DIR$/test_main/target" />
     </content>

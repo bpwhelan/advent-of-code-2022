@@ -1,5 +1,5 @@
 [package]
-name = "day6"
+name = "day07"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 util = {path = "../util"}
+trees = "0.4.1"
