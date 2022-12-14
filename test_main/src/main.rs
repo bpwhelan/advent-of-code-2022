@@ -4,6 +4,6 @@ fn main() {
     //         println!("{} : {}", c, i/4);
     //     }
     // }
-    let mut i = 1007;
-    println!("{}", i / 9)
+    let mut i: usize = 1;
+    println!("{}", i - 1)
 }
